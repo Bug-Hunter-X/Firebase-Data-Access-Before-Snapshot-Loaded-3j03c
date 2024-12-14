@@ -1,0 +1,1 @@
+The Firebase SDK might throw an error if you try to access a property of a document snapshot before the snapshot has fully loaded. This can happen if you use `.get()` or other asynchronous methods to fetch data and then immediately try to access the data.  The solution is to use `.then()` to ensure that the data has been fetched before accessing it.
